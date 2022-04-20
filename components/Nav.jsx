@@ -1,3 +1,4 @@
+import { LinkIcon } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import Link from "next/link";
 import { FaAdjust } from "react-icons/fa"
@@ -35,9 +36,9 @@ const Nav = () => {
 					<div className="icons"> {/* Wrapping icon + button together */}
 
 						<li className="icon click">
-							<a href="#">
+							<Link href="#">
 								<FaAdjust /> {/* Contrast Button icon import */}
-							</a>
+							</Link>
 						</li>
 
 						{/* Sign out */}
