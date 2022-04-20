@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+/* Removing HTMLs default link styles */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* 
+
+                                        NAVIGATION
+
+*/
+
+nav {
+    background-color: rgba(115, 66, 214, 0.1);
+    height: 80px;
+    position: relative;
+}
+
+/* Setting the logos size */
+
+.logo {
+    width: 160px;
+}
+
+/* positioning all of the contents inside the navigation */
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 80px;
+    width: 100%;
+    max-width: 2400px;
+}
+
+/* Styling the contents in the nav bar */
+
+.nav__row {
+    display: flex;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 36px;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 36px;
+}
+
+.signin {
+    cursor: pointer;
+    width: 100px;
+}
+
+.btn {
+    background-color: #5E17EB;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 36px;
+    cursor: pointer;
+}
+
+/* 
+
+                                        LANDING
+
+*/
+
+/* Setting the min height and background colour of the Landing section */
+
+#Landing {
+    padding-top: 200px;
+    min-height: 100vh;
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+/* Styling the title */
+
+.title {
+    font-size: 48px;
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.purple {
+    color: #5E17EB;
+}
+
+/* Positioning and styling the search bar */
+
+.search__course {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 90%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+input {
+    outline: none;
+    border: 3px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 500ms ease;
+    background-color: rgba(233, 226, 248, 0.1)
+}
+
+input:focus,
+textarea:focus {
+    border-color: #5E17EB;
+}
+
+/* Styling and positioning the Browse All button */
+
+.browse__all {
+    margin-top: 16px;
+    background-color: #5E17EB;
+    border: 2px solid #5E17EB;
+    color: white;
+    font-weight: 700;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+.btn__location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.browse__all:hover {
+    border-color: #5E17EB;
+    background-color: transparent;
+    color: #5E17EB;
+}
+
+/* Styling the Contact Modal and making it sticky to the page */
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    padding-top: 6px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5E17EB;
+    color: white;
+    position: fixed;
+    bottom: 32px;
+    right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
+    cursor: pointer;
+}
+
+/* 
+
+                                        DESCRIPTION
+
+*/
+
+#Description {
+    background-color: rgba(115, 66, 214, 0.1);
+    padding: 48px 0;
+    min-height: 100vh;
+}
+
+/* styling the paragraph */
+.section__description--header {
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+
+.section__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 600px;
+    text-align: center;
+}
+
+.section__description--para {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: rgb(92, 91, 91);
+}
+
+/* Positioning the two <divs> */
+.testimonial__left {
+    width: 35%;
+    padding: 0 24px 0 48px;
+    margin: 0 auto;
+}
+
+.testimonial__right {
+    width: 60%;
+    padding: 0 24px;
+}
+
+/* 
+
+                                            FOOTER
+
+*/
+
+footer {
+    background-color: #242424;
+}
+
+.footer__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer__link,
+.footer__copyright {
+    color: #fff;
+}
+
+.footer__list,
+.footer__copyright {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link {
+    padding: 0 8px;
+}
+
+/* 
+
+                                        MODAL
+
+*/
+
+/* styling the text and input forms */
+
+.modal__input,
+textarea {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 3px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #dcdfe6;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #5E17EB;
+}
+
+/* designing the pop up modal */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s ease;
+}
+
+.modal__contact {
+    background-color: #242424;
+    color: white;
+    transform: translateX(110%);
+}
+
+.modal__title {
+    font-size: 26px;
+}
+
+.modal__sub-title {
+    margin: 12px 0 24px 0;
+    font-size: 14px;
+}
+
+.form__item {
+    margin-bottom: 20px;
+}
+
+.form__submit {
+    background-color: #5E17EB;
+    border: 2px solid #5E17EB;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+.form__submit:hover {
+    border-color: #5E17EB;
+    background-color: transparent;
+}
+
+.form__submit:active {
+    border-color: #5E17EB;
+    color: #5E17EB;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+    z-index: 100;
+}
+
+/* making it overlay everything else */
+
+.modal--open .modal {
+    z-index: 60;
+    visibility: visible;
+}
+
+/* positioning the modal */
+
+.modal__half {
+    width: 100%;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    transition: all 300ms ease-in;
+}
+
+.modal--open .modal__contact {
+    transform: translateX(0%);
+}
+
+/* success message overlay design */
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
+    font-size: 80px;
+}
+
+.modal__overlay--success {
+    background-color: #5E17EB;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 28px;
+}
+
+.spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
+    display: flex;
+}
+
+/* making everything else dissapear */
+
+.modal--open .nav__container,
+.modal--open .container {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.nav__container,
+.container {
+    opacity: 1;
+    visibility: visible;
+    transition: all 400ms 500ms;
+}
+
+/* 
+
+                                    Options
+
+*/
+
+#Options {
+    background-color: rgba(115, 66, 214, 0.1);
+    max-width: 1000vw;
+    min-height: 100vh;
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+}
+
+.options__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.option {
+    padding: 10px 24px;
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.option__title {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.option__subtitle {
+    font-size: 24px;
+}
+
+.option__list {
+    text-align: center;
+    max-width: 280px;
+    margin: 8px;
+    color: gray;
+    font-size: 20px;
+}
+
+/* adding a animation effect when hovering over the items in the list */
+
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    bottom: -3px;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect--purple:after {
+    background-color: #7342d6;
+}
+
+.link__hover-effect:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* 
+
+                            OPTION
+
+*/
+
+.option__container {
+    background-color: rgba(115, 66, 214, 0.1);
+    max-height: 1100vh;
+    min-height: 80vh;
+    padding: 24px;
+}
+
+/* 
+
+                            SIGNIN PAGE
+
+*/
+
+.signin__container {
+    background-color: rgba(115, 66, 214, 0.1);
+    max-height: 1100vh;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin__logo {
+    margin-top: -250px;
+    width: 350px;
+}
+
+.signin__btn {
+    margin-top: -48px;
+}
+
+
+/* 
+
+            COURSE PAGE
+
+*/
+
+.add__review {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.posts {
+    background-color: rgb(233, 226, 248);
+    margin-top: 28px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+    max-width: 60%;
+    padding-left: 8px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.icon-1 {
+    height: 20px;
+}
+
+.userimg {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    padding: 4px;
+    margin-right: 12px;
+}
+
+.p {
+    flex: 1;
+    font-weight: 700;
+}
+
+.post__img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.post__btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.captions {
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.caption__user {
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.post__form {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.form__img {
+    height: 28px;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+
+.post__input {
+    flex: 1
+}
+
+.leave__comment {
+    font-weight: 500;
+    border-style: none;
+    background-color: rgba(233, 226, 248, 0.1);
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.post__icon {
+    width: 50px;
+}
+
+.likes {
+    font-weight: bold;
+}
+
+
+.post__btn {
+    height: 28px;
+    padding-right: 16px;
+    padding-left: 8px;
+}
+
+.like__btn {
+    height: 28px;
+    padding-right: 16px;
+    padding-left: 8px;
+    color: red;
+}
+
+.comments {
+    padding: 8px
+}
+
+.comment {
+    display: flex;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+.commentpfp {
+    border-radius: 50%;
+    width: 16px;
+    cursor: pointer;
+    margin-right: 8px;
+
+}
+
+/* 
+
+                            MODAL2
+
+*/
+
+.modal2 {
+    height: 400px !important;
+    max-width: 45% !important;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: 10vh;
+}
+
+.modal--open .option__row {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.option__row {
+    opacity: 1;
+    visibility: visible;
+    transition: all 400ms 500ms;
+}
+
+.modal2__input {
+    height: 40px !important;
+}
+
+.form__items {
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.camera__icon {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.form__submit2 {
+    margin-top: 16px;
+}
+
+/* 
+
+                                        RESPONSIVE
+
+*/
+
+/* Small phones, tablets, large smart phones */
+
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    /* NAV */
+    nav {
+        width: 1000px;
+    }
+    a {
+        font-size: 19px;
+    }
+    .logo {
+        width: 200px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .signin {
+        font-size: 15px;
+        width: 100px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    /* LANDING */
+    #Landing {
+        width: 1000px;
+        min-height: 110vh;
+    }
+    .search__course {
+        font-size: 20px;
+    }
+    .browse__all {
+        font-size: 30px;
+    }
+    .mail__btn {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+    }
+    /* DESCRIPTION */
+    #Description {
+        width: 1000px;
+        min-height: 200vh;
+        padding-top: 600px;
+        padding-bottom: 600px;
+    }
+    .section__description {
+        flex-direction: column;
+        justify-items: center;
+        box-sizing: border-box;
+    }
+    .testimonial__left{
+        width: 70%;
+    }
+    .testimonial__right {
+        width: 80%;
+    }
+    .section__description--header {
+        font-size: 60px;
+        width: 600px;
+    }
+    .section__description--para {
+        font-size: 40px;
+        margin-bottom: 150px;
+        width: 600px;
+    }
+    /* FOOTER */
+    #Footer {
+        width: 1000px;
+    }
+    .footer__copyright {
+        font-size: 40px;
+    }
+    .footer__link {
+        font-size: 36px;
+    }
+    /* MODAL */
+    .modal {
+        top: 10%;
+        left: 10%;
+        transform: none;
+        min-width: 900px;
+        min-height: 120%;
+    }
+    /* OPTION PAGE */
+    #Options {
+        width: 1000px;
+    }
+    .options__wrapper {
+        min-height: 2500px;
+    }
+    /* sign in */
+    .signin__container {
+        width: 1000px;
+        height: 200vh;
+    }
+    /* Computer Science */
+    .option__container {
+        width: 1000px;
+        height: 200vh;
+    }
+    .section__description--para {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    /* NAV */
+    nav {
+        width: 1000px;
+    }
+    .nav__container {
+        align-content: center;
+    }
+    a {
+        font-size: 22px;
+    }
+    .logo {
+        width: 180px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .signin {
+        font-size: 17px;
+        width: 100px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    /* LANDING */
+    #Landing {
+        width: 1000px;
+        min-height: 250vh;
+    }
+    .search__course {
+        font-size: 25px;
+    }
+    .browse__all {
+        font-size: 30px;
+    }
+    .mail__btn {
+        width: 150px;
+        height: 150px;
+        font-size: 60px;
+    }
+    /* DESCRIPTION */
+    #Description {
+        width: 1000px;
+        min-height: 220vh;
+    }
+    .section__description--header {
+        font-size: 80px;
+        width: 600px;
+
+    }
+    .section__description--para {
+        font-size: 60px;
+        width: 600px;
+    }
+}
