@@ -18,10 +18,10 @@ const Options = () => {
                             <h3 className="option__subtitle">GCSE</h3> {/*GCSE ROW*/}
 
                             <li className="option__list">
-                                <a href="/ComputerScience" className="
+                                <Link href="/ComputerScience" className="
                                 link__hover-effect
                                 link__hover-effect--purple
-                                ">Computer Science</a>
+                                ">Computer Science</Link>
                             </li>
                             
                         </div>
@@ -30,10 +30,10 @@ const Options = () => {
                             <h3 className="option__subtitle">A-Level</h3> {/*A-LEVEL ROW*/}
 
                             <li className="option__list">
-                                <a href="/Maths" className="
+                                <Link href="/Maths" className="
                                 link__hover-effect
                                 link__hover-effect--purple
-                                ">Maths</a>
+                                ">Maths</Link>
                             </li>
 
                         </div>
@@ -42,10 +42,10 @@ const Options = () => {
                             <h3 className="option__subtitle">University</h3> {/*UNIVERSITY ROW*/}
 
                             <li className="option__list">
-                                <a href="/Computer Science with Business" className="
+                                <Link href="/Computer Science with Business" className="
                                 link__hover-effect
                                 link__hover-effect--purple
-                                ">Computer Science with Business</a>
+                                ">Computer Science with Business</Link>
                             </li>
 
                         </div>
