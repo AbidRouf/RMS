@@ -18,7 +18,7 @@ const Options = () => {
                             <h3 className="option__subtitle">GCSE</h3> {/*GCSE ROW*/}
 
                             <li className="option__list">
-                                <Link href="/ComputerScience" className="
+                                <Link to="/ComputerScience" className="
                                 link__hover-effect
                                 link__hover-effect--purple
                                 ">Computer Science</Link>
